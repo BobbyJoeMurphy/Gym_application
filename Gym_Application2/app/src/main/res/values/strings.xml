@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Gym_Application</string>
+    <string name="Welcome">Welcome</string>
+    <string name="register">register</string>
+    <string name="Continue">Continue</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">username</string>
+    <string name="username1">Username</string>
+    <string name="forgotten_password">Forgotten Password</string>
+    <string name="register11">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="textview">TextView</string>
+    <string name="profile">Profile</string>
+    <string name="exercise">Exercise</string>
+    <string name="workout">Workout</string>
+    <string name="Bmi">Bmi</string>
+    <string name="ContextOfBmi">Change me later</string>
+
+
+    <string name="progress">progress</string>
+    <string name="Profile">Profile</string>
+    <string name="Explore">Explore</string>
+    <string name="Progress">Progress</string>
+    <string name="button">Button</string>
+    <string name="logout">LogOut</string>
+    <string name="title_activity_exersise_fragment">Exersise_Fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="ok">ok</string>
+    <string name="sss">sss</string>
+    <string name="name">Name</string>
+    <string name="weight_in_kg">Weight in KG</string>
+    <string name="bmi">BMI</string>
+    <string name="upload">Upload</string>
+    <string name="add_to_workout">Add to workout</string>
+    <string name="login">Login</string>
+
+
+</resources>

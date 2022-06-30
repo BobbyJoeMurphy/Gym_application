@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/Profile_Fragment">
+
+    <fragment
+        android:id="@+id/Profile_Fragment"
+        android:name="com.example.gym_application.Fragments.Profile_Fragment"
+        android:label="fragment_profile_"
+        tools:layout="@layout/fragment_profile_" >
+
+        <action
+            android:id="@+id/action_Profile_Fragment_to_Exersise_Fragment"
+            app:destination="@id/Exersise_Fragment"
+            app:popUpTo="@id/Profile_Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Profile_Fragment_to_WorkOut"
+            app:destination="@id/WorkOut" />
+        <action
+            android:id="@+id/action_Profile_Fragment_to_Explore"
+            app:destination="@id/Explore" />
+    </fragment>
+    <fragment
+        android:id="@+id/Exersise_Fragment"
+        android:name="com.example.gym_application.Fragments.Exersise_Fragment"
+        android:label="fragment_exersise"
+        tools:layout="@layout/fragment_exersise">
+
+        <action
+            android:id="@+id/action_Exersise_Fragment_to_Explore"
+            app:destination="@id/Explore" />
+        <action
+            android:id="@+id/action_Exersise_Fragment_to_Progress"
+            app:destination="@id/Progress"
+            app:popUpTo="@id/Exersise_Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Exersise_Fragment_to_fragment_Arms"
+            app:destination="@id/Fragment_Triceps"
+            app:popUpTo="@id/Exersise_Fragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_Exersise_Fragment_to_addAnExercise"
+            app:destination="@id/addAnExercise" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/Explore"
+        android:name="com.example.gym_application.Fragments.Explore_Fragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" />
+    <fragment
+        android:id="@+id/WorkOut"
+        android:name="com.example.gym_application.Fragments.WorkOut_Fragment"
+        android:label="fragment_work_out"
+        tools:layout="@layout/fragment_work_out" >
+        <action
+            android:id="@+id/action_WorkOut_to_Triceps"
+            app:destination="@id/Triceps" />
+    </fragment>
+    <fragment
+        android:id="@+id/Progress"
+        android:name="com.example.gym_application.Fragments.Progress_Fragment"
+        android:label="fragment_progress"
+        tools:layout="@layout/fragment_progress" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.gym_application.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/Fragment_Triceps"
+        android:name="com.example.gym_application.Fragments.FragmentListExercises"
+        android:label="Fragment_Triceps"
+        tools:layout="@layout/fragment_triceps">
+        <action
+            android:id="@+id/action_Fragment_Triceps_to_Triceps"
+            app:destination="@id/Triceps" />
+        <action
+            android:id="@+id/action_Fragment_Triceps_to_typeOfExercise"
+            app:destination="@id/typeOfExercise" />
+    </fragment>
+    <fragment
+        android:id="@+id/Triceps"
+        android:name="com.example.gym_application.Fragments.FragmentExerciseDisplay"
+        android:label="fragment_typeof_arm"
+        tools:layout="@layout/fragmentexercisedisplay" >
+    </fragment>
+    <activity
+        android:id="@+id/register_Details"
+        android:name="com.example.gym_application.Register_Details"
+        android:label="activity_register_details"
+        tools:layout="@layout/activity_register_details" />
+    <activity
+        android:id="@+id/register_Activity"
+        android:name="com.example.gym_application.Register_Activity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <fragment
+        android:id="@+id/addAnExercise"
+        android:name="com.example.gym_application.Fragments.AddAnExercise"
+        android:label="AddAnExercise" />
+    <fragment
+        android:id="@+id/typeOfExercise"
+        android:name="com.example.gym_application.Fragments.TypeOfEx"
+        android:label="TypeOfExercise" />
+</navigation>
